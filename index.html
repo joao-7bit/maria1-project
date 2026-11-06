@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um Pedido Especial ♥</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hearts"></div>
+    <main class="container">
+        <section id="tela1" class="tela ativa">
+            <div class="coracao-principal">♥</div>
+            <h1>Quer namorar comigo?</h1>
+            <p>Tenho uma pergunta muito especial para fazer a você...</p>
+            <div class="botoes">
+                <button class="sim" onclick="aceitar()">SIM ♥</button>
+                <button class="nao" id="nao" onclick="aumentarNao()">NÃO</button>
+            </div>
+        </section>
+        <section id="tela2" class="tela">
+            <div class="coracao-principal">♥</div>
+            <h1>Obaaa!</h1>
+            <p>Agora vamos escolher o dia em que nossa história vai começar.</p>
+            <div class="campo-grupo">
+                <label for="dataInicio">♥ Data de início do namoro</label>
+                <input type="date" id="dataInicio" class="campo-data">
+            </div>
+            <div class="campo-grupo">
+                <label for="dataFim">♥ Data de fim do namoro</label>
+                <input type="date" id="dataFim" class="campo-data">
+                <p id="avisoFim" class="aviso"></p>
+            </div>
+            <button class="confirmar" onclick="confirmarData()">Confirmar ♥</button>
+        </section>
+        <section id="tela3" class="tela">
+            <div class="coracao-principal">♥</div>
+            <h1 class="titulo-final">Obaaa!</h1>
+            <p class="mensagem-final">Fico feliz por ter aceitado por livre e espontânea vontade.</p>
+            <div class="data-final" id="dataEscolhida"></div>
+            <div class="gif-container">&gt;</div>
+            <div class="declaracao">
+                Que nossa história seja cheia de amor, carinho, felicidade e momentos inesquecíveis.
+                <br><br>
+                Você é muito especial para mim!
+                <div class="coracoes-finais">♥ ♡ ♥</div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
